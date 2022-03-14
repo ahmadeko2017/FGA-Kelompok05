@@ -187,4 +187,11 @@ main {
     .menu {
         display: flex;
     }
+    
+    .rudeus .foto {
+        width: 100%;
+    }
+    .rudeus .deskripsi {
+        width: 100%;
+    }
 }
