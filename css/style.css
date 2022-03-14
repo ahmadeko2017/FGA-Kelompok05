@@ -111,54 +111,74 @@ nav ul li a:hover {
 }
 
 main {
-    height: 2000px;
     width: auto;
 }
 
-.rudeus {
+.header-main {
+    height: 50px;
+}
+
+.display {
     display: flex;
-    padding-top: 50px;
     background-image: url("../img/mushoku1.jpg");
     background-size: cover;
     justify-content: space-around;
 
 }
 
-.rudeus .foto {
+.display .foto {
     display: flex;
     width: 40%;
     padding-bottom: 5vh;
     justify-content: space-around;
 }
 
-.rudeus .foto img {
+.display .foto img {
     height: 500px;
 }
 
-.rudeus .deskripsi {
+.display .deskripsi {
     display: inline-block;
     padding: 40px;
     color: rgb(255, 254, 254);
+    background-color: rgb(102, 66, 0, 0.5);
     text-shadow: 1px 1px 9px rgb(253, 149, 112);
     font-family: sans-serif;
     width: 60%;
     align-items: center;
+    margin: 50px;
+    border-radius: 1pc;
 }
 
-.rudeus .deskripsi h1 {
+.display .deskripsi h1 {
     font-size: 6vmin;
     transition: ease-in .5s;
 }
 
-.rudeus .deskripsi p {
+.display .deskripsi p {
     font-size: 20px;
     transition: ease-in .5s;
     text-align: justify;
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 @media screen and (max-width: 768px) {
     nav ul {
         width: 45%;
+    }
+    .display .deskripsi {
+        margin: 25px;
     }
 }
 
@@ -188,16 +208,18 @@ main {
     }
 
 
-    .rudeus {
+    .display {
         display: block;
     }
 
-    .rudeus .foto {
+    .display .foto {
         width: 100%;
 
     }
 
-    .rudeus .deskripsi {
+    .display .deskripsi {
         width: 100%;
+        margin: 0;
+        border-radius: 0;
     }
 }
