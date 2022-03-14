@@ -12,27 +12,37 @@ body {
 /*ini untuk mengatur ukuran footer*/
 
 footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background: #111;
-    height: auto;
-    width: 100vw;
+    height: 10wh;
     font-family: "Open Sans";
-    padding-top: 20px;
+
     color: #fcfcfc;
 }
 
+.container-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a, footer p,footer li {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
 
 /*ini untuk mengatur posisi teks*/
 
 .footer-contents {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content: left;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -79,7 +89,7 @@ footer {
 }
 
 .socials a i {
-    font-size: 1.1rem;
+    font-size: 2.1rem;
 }
 
 .socials a:hover {
@@ -94,8 +104,6 @@ footer {
 /*untuk mengatur teks dibawah icon*/
 
 .footer-bottom {
-    background: #000;
-    width: 100vw;
     padding: 10px 0;
     text-align: center;
 }
@@ -114,5 +122,27 @@ footer {
 .footer-bottom {
     text-transform: uppercase;
     opacity: 0.4;
-    font-weight: 200;
+    font-weight: 200px;
+}
+
+.container-social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-social {
+    font-size: .8rem;
+}
+
+.container-social ul {
+    display: flex;
+    opacity: .4;
+}
+
+.container-social ul li {
+    padding-left: 20px;
+}
+
+.container-social ul li a {
+    transform: scale(1.5);
 }
