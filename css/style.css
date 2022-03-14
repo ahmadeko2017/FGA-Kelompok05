@@ -128,7 +128,6 @@ main {
     display: flex;
     width: 40%;
     padding-bottom: 5vh;
-    padding-left: 10vh;
     justify-content: space-around;
 }
 
@@ -138,7 +137,7 @@ main {
 
 .rudeus .deskripsi {
     display: inline-block;
-    padding:10vmin;
+    padding: 40px;
     color: rgb(255, 254, 254);
     text-shadow: 1px 1px 9px rgb(253, 149, 112);
     font-family: sans-serif;
@@ -187,11 +186,18 @@ main {
     .menu {
         display: flex;
     }
-    
+
+
+    .rudeus {
+        display: block;
+    }
+
     .rudeus .foto {
         width: 100%;
+
     }
+
     .rudeus .deskripsi {
-        width: 100%;
+        width: 80%;
     }
 }
