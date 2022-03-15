@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+
+/*ini Kodingan navbarnya, oh ya responsivenya ada di paling bawah*/
+
+header {
+    background-color: #ff4321;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    min-width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .nav-branding {
+    font-size: 2rem;
+  }
+  
+  .nav-link {
+    transition: 0.7s ease;
+  }
+  
+  .nav-link:hover {
+    background: white;
+    color: #ff4321;
+    border-radius: 10px;
+    padding: 8px 10px;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 10px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+  
+  /* Bang Eko, kasih saran anime selain mushoku, btw ane paling demen sama Fate
+  xixixixi terutama sama Emiya (Archer)*/
+  
+
+/*------------------------------------------------------------------------------------*/
+/*ini responsivenya*/
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(8px) rotate(-45deg);
+    }
+  
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 65px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #ff4321;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+  
+    .nav-item {
+        margin: 16px 0;
+    }
+  
+    .nav-menu.active {
+        left: 0;
+    } 
+  }
+    
