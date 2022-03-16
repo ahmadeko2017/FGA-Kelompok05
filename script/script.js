@@ -1,6 +1,12 @@
-const menuToggle = document.querySelector('.menu input');
-const nav = document.querySelector('nav ul');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-menuToggle.addEventListener('click', function() {
-    nav.classList.toggle('slide');
-});
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }))
