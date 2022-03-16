@@ -26,16 +26,21 @@
     }
 
     .info {
-        width: 50%;
+        width: 47%;
+        transform: translateY(2px);
     }
 
     .sosmed {
         display: none;
     }
+    .img-box {
+        width: 18%;
+        transform: translateX(-20vw);
+    }
 }
 
 @media(max-width:768px) {
-    .top-wrapper {
+    #landing-page {
         display: none;
     }
     .hamburger {
@@ -73,19 +78,19 @@
     } 
 
     .info {
-        margin-top: 10vh;
+        margin-top: 14vh;
         width: 40%;
         transform: translateY(-10vh);
     }
 
-    .img-box {
-        width: 18%;
-        transform: translateX(-21vw);
+    .info p {
+        font-size: 3vmin;
     }
 
-    .img-box img {
-        z-index: 0;
-        height: 50vmin;
+    .img-box {
+        width: 18%;
+        transform: translateX(-20vw);
+        bottom: 0;
     }
 
     .sosmed li {
@@ -117,11 +122,11 @@
         display:inline-block;
         width: 100vmin;
         height: 40%;
-        transform: translateX(-6vw);
+        transform: translateX(-6vw) ;
     }
 
     .img-box {
-        transform: translateX(35vw) translateY(-10vh);
+        transform: translateX(35vw) translateY(-8vh);
         position: relative;
         height: 55%;
         left: 0;
