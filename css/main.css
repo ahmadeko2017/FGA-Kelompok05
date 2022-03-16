@@ -10,6 +10,17 @@
 
 body {
     overflow: hidden;
+    width: 100vw;
+    height: auto;
+}
+
+.img-box {
+    width: 40%;
+    bottom: 0;
+}
+
+.info {
+    width: 50%;
 }
 
 /*Ini udah masuk ke Content*/
@@ -125,3 +136,26 @@ background: #ff4321;
 transform: translateY(-10px);
 }
   /*------------------------------------------------------------------------------------*/
+
+#landing-page {
+    display: flex;
+    flex-direction: column ;
+    justify-content:end;
+    background-image: url(../assets/BTS/BCKGRND.webp);
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-5vh);
+}
+
+#landing-page a {
+    text-align: center;
+}
+
+.wrapper {
+    background-color: rgba(255, 98, 98, 0.5);
+    z-index: 10;
+    padding-top: 2vw;
+    padding-left: 4vh;
+    color: #ffffff;
+    text-align: left;
+}
