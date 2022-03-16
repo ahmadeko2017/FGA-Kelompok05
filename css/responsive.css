@@ -1,4 +1,21 @@
-  /*ini responsivenya*/
+.mobile-view {
+    display: none;
+}
+
+@media(max-width:1200px) {
+    .info {
+        margin-top: 10vh;
+        width: 40%;
+        transform: translateY(-10vh);
+    }
+
+    .img-box {
+        width: 18%;
+        transform: translateX(-23vw);
+    }
+}
+
+/*ini responsivenya*/
 @media(max-width:960px) {
     .top-wrapper {
         display: none;
@@ -57,16 +74,18 @@
 
     .info {
         margin-top: 10vh;
-        width: 65%;
+        width: 40%;
+        transform: translateY(-10vh);
     }
 
     .img-box {
         width: 18%;
+        transform: translateX(-21vw);
     }
 
     .img-box img {
         z-index: 0;
-        height: 60vmin;
+        height: 50vmin;
     }
 
     .sosmed li {
@@ -77,6 +96,10 @@
 }
   
   @media(max-width:500px) {
+    #landing-page {
+        display: none;
+    }
+
     .top-wrapper {
         display: none;
     }
@@ -93,9 +116,8 @@
         margin-top: 45vh;
         display:inline-block;
         width: 100vmin;
-        height: 50%;
+        height: 40%;
         transform: translateX(-6vw);
-
     }
 
     .img-box {
@@ -112,4 +134,42 @@
       right: 70px;
       top: -200px;
     }
-  }
+    
+    #f01 {
+        position:fixed;
+        bottom: 4vh;
+        margin-left: 1vmin;
+        margin-bottom: 4vmin;
+        width: 20px;
+        height: 20px;
+        opacity: .5;
+    }
+
+    #f01:checked ~ .container .info {
+        transform: translateY(-40vh);
+        height: 100vh;
+    }
+
+    #f01:checked ~ .container .info p {
+        font-size: 5vmin;
+    }
+
+    #f01:checked ~ .container .img-box {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+        position: fixed;
+        bottom: 4vh;
+        color: black;
+        margin-left: 8vmin;
+        margin-bottom: 4vmin;
+        opacity: .5;
+    }
+    .mobile-view p {
+        font-size: 15px;
+        font-weight:bold;
+
+    }
+}
